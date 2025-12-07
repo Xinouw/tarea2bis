@@ -28,8 +28,7 @@ En la raíz del repositorio se encuentran los siguientes archivos principales:
   Algunos archivos de ejemplo generados por `generate_meteors.py`.  
   Cada archivo corresponde a un meteoro y contiene una sola línea con sus datos (fecha, hora, duración y ángulos).
 
-> Nota: para no llenar el repositorio con cientos de archivos de texto, aquí incluyo una muestra de archivos `meteor_XXX.txt`.  
-> El conjunto completo de datos se puede regenerar en cualquier momento ejecutando `generate_meteors.py`.
+
 
 ---
 
