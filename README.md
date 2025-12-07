@@ -1,42 +1,50 @@
 # Tarea 2 – Simulación y análisis de meteoros
 
-Este repositorio contiene la solución a la Tarea 2, donde se pide simular una serie de meteoros observados en una ventana de 2 días y luego analizar esos datos para obtener el intervalo promedio entre eventos.
+Este repositorio contiene dos programas en Python que:
 
-La idea general es:
+1. **Simulan** meteoros observados en una ventana de 2 días y guardan cada evento en un archivo de texto.
+2. **Analizan** esos archivos para calcular el intervalo promedio de tiempo entre meteoros.
 
-- Primero **generar datos sintéticos** de meteoros y guardarlos en archivos de texto simples (`meteor_XXX.txt`).
-- Después **leer esos archivos** y calcular cada cuántos segundos, en promedio, aparece un meteoro.
-
-Todo está hecho en **Python 3** usando solo librerías estándar, tal como pide el enunciado.
+Todo se hace con **Python 3** y solo librerías estándar.
 
 ---
 
-## Estructura del repositorio
-
-En la raíz del repositorio se encuentran los siguientes archivos principales:
+## 1. Contenido del repositorio
 
 - `generate_meteors.py`  
-  Script que genera los archivos de meteoros `meteor_XXX.txt`.
+  Script que genera archivos de texto `meteor_XXX.txt`, uno por cada meteoro simulado.
 
 - `analyze_meteors.py`  
-  Script que lee los archivos de meteoros y construye el archivo de estadísticas `stats.txt`.
-
-- `stats.txt`  
-  Archivo de salida con el número total de eventos considerados y el intervalo de tiempo promedio entre meteoros.
+  Script que lee los archivos `meteor_XXX.txt` y crea el archivo de estadísticas `stats.txt`.
 
 - `meteor_XXX.txt`  
-  Algunos archivos de ejemplo generados por `generate_meteors.py`.  
-  Cada archivo corresponde a un meteoro y contiene una sola línea con sus datos (fecha, hora, duración y ángulos).
+  Algunos ejemplos de archivos de meteoros ya generados, uno por evento, en formato de texto plano.
 
-
+- `stats.txt`  
+  Archivo de salida con el número total de eventos y el intervalo de tiempo promedio entre meteoros.
 
 ---
 
-## Cómo ejecutar los programas
+## 2. Requisitos
 
-### Opción 1: Desde la terminal (Python local)
+- Python 3.x instalado (si se ejecuta en un PC local).
+- No se usan librerías externas, solo:
+  - `random`
+  - `datetime`
+  - `glob`
 
-1. Ejecutar el script que genera los meteoros:
+Si se usa **Google Colab**, no es necesario instalar nada extra.
 
-   ```bash
-   python generate_meteors.py
+---
+
+## 3. Ejecución paso a paso en un PC local (terminal)
+
+A continuación dejo los pasos como si partiera desde cero en un computador con Python instalado.
+
+### 3.1. Clonar o descargar el repositorio
+
+**Opción A: Clonar con git** (si tienes git instalado):
+
+```bash
+git clone https://github.com/Xinouw/tarea2bis.git
+cd tarea2bis
